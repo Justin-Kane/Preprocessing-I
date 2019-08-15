@@ -130,7 +130,149 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
+img {
+  width: 100%;
+}
+h1 {
+  color: #588157;
+  font-family: monospace;
+  font-size: 2rem;
+}
+h2 {
+  color: #588157;
+  font-family: monospace;
+  font-size: 1.7rem;
+}
+header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav {
+  margin-right: 9.5%;
+}
+header nav ul a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: monospace;
+  color: black;
+}
+header nav ul a:nth-child(1) {
+  color: #588157;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  border: 1px solid black;
+  width: 80%;
+}
+.bio {
+  border: 1px solid black;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: azure;
+}
+.bio .main-content {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.bio .main-content .profile-pic {
+  width: 100%;
   height: 100%;
+}
+.bio .main-content .profile-info {
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.bio .main-content .profile-info h1 {
+  padding-bottom: 4%;
+}
+.bio .main-content .profile-info p {
+  padding: 10% 0% 10% 0%;
+  margin: 20px;
+}
+.bio .main-content .profile-info button {
+  border: 2px solid black;
+  height: 2rem;
+  width: 7rem;
+  text-align: center;
+}
+.details {
+  border: 1px solid black;
+  height: auto;
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .details {
+    flex-direction: column;
+  }
+}
+.details .about-me {
+  border: 1px solid black;
+  width: 50%;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.details .about-me h2 {
+  margin-bottom: 20px;
+}
+.details .about-me p {
+  line-height: 1.5rem;
+}
+.details .my-skills {
+  border: 1px solid black;
+  width: 50%;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.details .my-skills h2 {
+  margin-bottom: 20px;
+}
+.details .my-skills ul {
+  line-height: 1.5rem;
+  margin-left: 5%;
+}
+.work-history {
+  border: 1px solid black;
+}
+.work-history h2 {
+  text-align: center;
+  padding: 2%;
+}
+.work-history .boxes {
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4%;
+  margin-bottom: 10%;
+  font-family: 'Montserrat', sans-serif;
+}
+.work-history .boxes .box1 {
+  width: 30%;
+  text-align: center;
+}
+.work-history .boxes .box1 h3 {
+  text-decoration: underline;
+}
+.work-history .boxes .box1 p {
+  padding-top: 7%;
+  line-height: 2rem;
+}
+footer {
+  border: 1px solid black;
+  height: 10vh;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span {
+  color: #588157;
 }
